@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CLCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h" />
+    <CLCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AnimatedSprite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Entity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameContext.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Harry.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealthBar.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ProgressBar.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ScrollingBackground.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Sky.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SpriteEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Utilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnimatedSprite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Entity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameContext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Harry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealthBar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ProgressBar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ScrollingBackground.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Sky.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SpriteEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Content">
+      <UniqueIdentifier>{90cc253e-f360-43fd-b91a-5c36671b7691}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="$(MSBuildThisFileDirectory)..\Harry.Content\Fonts\Symbols.ttf">
+      <Filter>Content</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\Harry.Content\Textures\sprites1.png">
+      <Filter>Content</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Harry.Content\Textures\sprites2.png">
+      <Filter>Content</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

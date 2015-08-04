@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4df2089b-b783-4f78-b3e1-f7123feaf6a6</SharedGUID>
+    <ItemsProjectGuid>{c5916717-4d1d-4460-8ea6-24ca3d953ac0}</ItemsProjectGuid>
+    <ItemsRootNamespace>Harry</ItemsRootNamespace>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AnimatedSprite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp">
+      <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Entity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameContext.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Harry.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealthBar.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ProgressBar.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ScrollingBackground.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Sky.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SpriteEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Utilities.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnimatedSprite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h">
+      <DependentUpon>$(MSBuildThisFileDirectory)App.xaml</DependentUpon>
+    </ClInclude>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Entity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameContext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Harry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealthBar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ProgressBar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ScrollingBackground.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Sky.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SpriteEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="$(MSBuildThisFileDirectory)..\Harry.Content\Fonts\Symbols.ttf">
+      <DeploymentContent>true</DeploymentContent>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\Harry.Content\Textures\sprites1.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Harry.Content\Textures\sprites2.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+</Project>

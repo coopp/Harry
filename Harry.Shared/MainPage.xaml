@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Harry.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Harry"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    Loaded="OnLoaded">
+
+    <Grid Background="Black">
+        <canvas:CanvasAnimatedControl x:Name="canvasControl" 
+                                      ClearColor="CornflowerBlue" 
+                                      Draw="OnDraw"
+                                      CreateResources="OnCreateResources"
+                                      SizeChanged="OnControlSizeChanged"
+                                      Update="OnUpdate"
+                                      GameLoopStarting="OnGameLoopStarting"
+                                      GameLoopStopped="OnGameLoopStopped"></canvas:CanvasAnimatedControl>
+    </Grid>
+</Page>
